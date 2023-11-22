@@ -25,6 +25,7 @@
                     <a class="nav-link " aria-current="page" href="index.html">Home</a>
                     <a class="nav-link active" href="#">Serviços</a>
                     <a class="nav-link" href="matricula.html">Matricula</a>
+                    <a class="nav-link"  href="mapa.html">Mapa</a>
                 </div>
             </div>
         </div>
@@ -37,6 +38,7 @@
                 <option value="1">IMC</option>
                 <option value="2">Percentual</option>
                 <option value="3">Ordenação</option>
+                <option value="4">Busca CEP</option>
 
             </select>
             <br>
@@ -79,6 +81,18 @@
                 <br>
                 <label id="resultadoOrdenacao"></label>
             </div>
+
+            <div id = "divBuscaCEP">
+                <label for="">Informe o CEP</label>
+                <br>
+                <input class="form-control"  id = "endereco" type="number">
+                <br>
+                <button class="btn btn-success" onclick = "buscaEndereco()">Buscar Endereço</button>
+                <p id = "pResultadoCEP"></p>
+
+            </div>
+        
+
         </div>
     </div>
 
